@@ -1,0 +1,15 @@
+name: angulardart_swiping_navbar
+version: 0.1.0
+author: AlexCDumitru(AlexCD) <email@alexcd.eu>
+homepage: http://www.alexcd.eu
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  angular: '1.1.0'
+  angulardart_custom_swipe: ">=0.1.1 <0.2.0"
+transformers:
+- angular:
+    html_files:
+      - lib/component/header.html
+      - lib/component/navbarLeft.html
+      - lib/component/content.html

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.angulardart.swiping.navbar"
+        versionCode = "10"
+        version     = "0.1.0" >
+
+    <name>AngularDart Swiping Navbar</name>
+
+    <description>
+        AngularDart example for a swiping navbar. Includes a config.xml file for Phonegap building.
+    </description>
+
+    <author href="http://www.alexcd.eu">AlexCD</author>
+
+    <gap:platform name="android" />
+
+    <access origin="*"/>
+</widget>
