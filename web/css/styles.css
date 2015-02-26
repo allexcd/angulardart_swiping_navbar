@@ -11,7 +11,7 @@ body {
     width: 250px;
     height: 100%;
     background-color: #4285f4;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -250px;
     /*transform: translate(-250px, 0);*/
