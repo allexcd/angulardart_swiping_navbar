@@ -1,10 +1,22 @@
 .buildlog
 .DS_Store
+
+## hidden files/folders
 .idea
 .pub/
-build/
+
+## root files/folders
 packages
+build
 pubspec.lock
+
+## dev project
 web/packages
 web/css/packages
-res/packages
+web/res/packages
+
+## node modules
+node_modules/
+
+## logs
+npm-debug.log
