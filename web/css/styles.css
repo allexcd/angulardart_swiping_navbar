@@ -7,49 +7,84 @@ body {
     min-height: 100%;
 }
 
-.navbarLeft{
+.sidemenu{
     width: 250px;
     height: 100%;
     background-color: #4285f4;
     position: fixed;
     top: 0;
-    left: -250px;
-    /*transform: translate(-250px, 0);*/
+    left: 0;
+    z-index: 1001;
 }
 
-.navbarLeft ul{
+.sidemenu ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navbarLeft ul li{
+.sidemenu ul li{
     padding: 10px;
     margin: 0;
     color: #fff;
     border-bottom: 1px solid #dcdcdc;
 }
 
-.transition{
+.sidemenu.ng-enter {
+    -webkit-transform: translate3d(-250px, 0, 0);
+    -webkit-transition: .32s ease-in transform;
+}
+
+.sidemenu.ng-enter.ng-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.sidemenu.ng-leave {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: .32s ease-in transform;
+}
+
+.sidemenu.ng-leave.ng-leave-active {
+    -webkit-transform: translate3d(-250px, 0, 0);
+}
+
+.no-flicker{
     -webkit-backface-visibility: hidden; /* prevent webkit transition flickering */
-    /*transition: transform 0.3s ease-out;*/
-}
-
-.opened{
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transform: translate(250px, 0);
-    -webkit-transition-duration: 300ms;
-    /*transform: translate(0,0);*/
-}
-
-.closed{
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 600ms;
-    -webkit-transform: translate(-250px, 0);
-    /*transform: translate(-250px,0);*/
+    -webkit-perspective: 1000;
 }
 
 .content{
     padding: 10px;
     text-align: right;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.5;
+}
+
+.backdrop.ng-enter {
+    -webkit-transition: .32s ease-out opacity;
+    -moz-transition: .32s ease-out opacity;
+    transition: .32s ease-out opacity;
+    opacity: 0;
+}
+
+.backdrop.ng-enter.ng-enter-active {
+    opacity: 0.5;
+}
+
+.backdrop.ng-leave {
+    -webkit-transition: .32s ease-out opacity;
+    -moz-transition: .32s ease-out opacity;
+    transition: .32s ease-out opacity;
+}
+
+.backdrop.ng-leave.ng-leave-active {
+    opacity: 0;
 }

@@ -8,7 +8,7 @@ class AppService {
   NavService navService;
   AppService(this.navService);
 
-  void toggleNavbar() {
-    navService.toggleNavbar();
+  void toggleSidemenu() {
+    navService.toggleSidemenu();
   }
 }

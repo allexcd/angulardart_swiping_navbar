@@ -11,5 +11,5 @@ transformers:
 - angular:
     html_files:
       - lib/component/header.html
-      - lib/component/navbarLeft.html
+      - lib/component/sidemenu.html
       - lib/component/content.html

@@ -15,7 +15,7 @@ class Header{
 
   Header(this.navService);
 
-  void toggleNavbar(){
-    navService.toggleNavbar();
+  void toggleSidemenu(){
+    navService.toggleSidemenu();
   }
 }

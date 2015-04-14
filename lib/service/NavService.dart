@@ -4,7 +4,7 @@ import 'package:angular/angular.dart';
 
 abstract class NavConfig{
   Map nav = {
-      'navOpened': false
+      'menuOpened': false
   };
 }
 
@@ -12,11 +12,11 @@ abstract class NavConfig{
 class NavService extends NavConfig{
   Map get getNav => nav;
 
-  void toggleNavbar(){
-    getNav["navOpened"] = !getNav["navOpened"];
+  void toggleSidemenu(){
+    getNav["menuOpened"] = !getNav["menuOpened"];
   }
 
-  void closeNavbar(){
-    getNav["navOpened"] = false;
+  void closeSidemenu(){
+    getNav["menuOpened"] = false;
   }
 }

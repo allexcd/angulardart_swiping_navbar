@@ -8,7 +8,7 @@
     <name>AngularDart Swiping Navbar</name>
 
     <description>
-        AngularDart example for a swiping navbar. Includes a config.xml file for Phonegap building.
+        AngularDart example for a swiping sidemenu. Includes a config.xml file for Phonegap building.
     </description>
 
     <author href="http://www.alexcd.eu">AlexCD</author>
